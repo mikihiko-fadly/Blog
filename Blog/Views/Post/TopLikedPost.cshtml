@@ -1,0 +1,16 @@
+﻿@model List<Post>
+
+<h1>Top 5 Liked Posts</h1>
+
+@foreach (var post in Model)
+{
+    <div class="card mb-5">
+        <div class="card-header">
+            <h2>@post.Title</h2>
+        </div>
+        <div class="card-body">
+            <p>@post.Content</p>
+            <p>Likes: @post.Likes</p>
+        </div>
+    </div>
+}
